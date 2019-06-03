@@ -1,0 +1,41 @@
+body {
+    background-color: #ffdb4f;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cup {
+    font-size: 300px;
+    height: .6em;
+    width: .7em;
+    border: .05em solid #ffffff;
+    border-radius: 0 0 .4em .4em;
+    position: relative;
+}
+
+.cup::before {
+    content: "";
+    position: absolute;
+    height: .25em;
+    width: .12em;
+    border: .05em solid #ffffff;
+    left: .7em;
+    border-radius: 0 0 .2em .08em;
+}
+
+.cup::after {
+    content: "";
+    position: absolute;
+    height: .18em;
+    width: .05em;
+    background-color: #ffffff;
+    top: -.3em;
+    left: .12em;
+    box-shadow: .4em 0 #ffffff,
+                .2em 0 #ffffff;
+}

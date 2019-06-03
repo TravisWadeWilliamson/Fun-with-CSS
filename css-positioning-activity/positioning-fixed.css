@@ -1,0 +1,74 @@
+**
+* Position 
+**/
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  font-size: 24px;
+  line-height: 32px;
+  color: #333;
+}
+
+#fixed {
+  background-color: #eee;
+  position: fixed;
+  padding: 60px;
+  text-align: center;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-style: 36px;
+  line-height: 45px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-style: 18px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+#relative {
+  background-color: #eee;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  height: 250px;
+}
+
+#absolute {
+  background-color: #999;
+  width: 250px;
+  position: absolute;
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+  right: -30px;
+}
+
+#startText {
+  /*somehow the changes that aren't affecting div size are also not affecting the color oft the #startText*/
+  color: rgb(241, 71, 71);
+}
+
+#middleText {
+  color: rgb(25, 25, 240);
+}
+
+#endText {
+  color: rgb(44, 236, 44);
+}

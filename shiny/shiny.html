@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="shiny">
+        <span>{</span>Looky here at this purdy thing! <span>}</span>
+    </h1>
+
+    <!--Let's style the fuck out of this bitch-->
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i");
+
+        /* we apply this to make sure other browsers don't add their own default margins/padding to elements */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;  
+
+            /* aligns the elements horizontally so in this case we are moving the h1 element to the center of the page between left and right*/
+            justify-content: center;
+
+            /* aligns the elements vertically so in this case we are moving the h1 element to the center between top and bottom */
+            align-items: center;
+            height: 100%;
+            background-color: #1d1f20;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 5.22vw;
+            letter-spacing: 0.03em;
+            }
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 8.69vw;
+            padding: 0 24px;
+        }
+            /* Here is where we make this cool styling happen */
+
+        .shiny {
+            background-image: -webkit-linear-gradient(left, white 25%, #f7c911 37.5%, #83ec63, #1ac0f3 62.5%, white 75%);
+           background-position: right center; 
+           background-size: 400% auto;
+           -webkit-background-clip: text;
+           background-clip: text;
+           color: white;
+           -webkit-text-fill-color: transparent;
+           /* text-fill-color: transparent; not sure what this and the following code do*/
+           transition: transparent;
+           transition: color 200ms linear;
+        }
+
+        .shiny:hover {
+            background-position: left center;
+            transition: background-position 2000ms ease-out;
+        }
+        
+
+    </style>
+</body>
+
+</html>
