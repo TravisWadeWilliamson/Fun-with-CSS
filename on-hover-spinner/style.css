@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #262626;
+}
+
+.container {
+ height: 450px;
+ width: 450px;
+ /* position: absolute; */
+ display: flex;
+}
+
+.crc1, .crc {
+    height: 400px;
+    width: 70px;
+    /* border: 3px solid white; */
+    position: relative;
+    border-radius: 50%;
+    transition: 1000ms linear;
+    
+}
+
+.blackhole {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    background-color: #262626;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    top: 165px;
+    transition: 1100ms ease-in;
+}
+
+.crc1 {
+    top: 25px;
+    left: 190px;
+}
+
+.crc {
+    bottom: 3px;
+    right: 3px;
+    border: 3px solid #262626;
+}
+
+.red {
+    border: 3px solid #ee1100;
+}
+
+.mid-red {
+    border: 3px solid #ff4422;
+}
+
+.orange {
+    border: 3px solid #ff9933;
+}
+
+.light-orange {
+    border: 3px solid #feae2d;
+}
+
+.orange-yellow {
+    border: 3px solid #ccbb33;
+}
+
+.yellow-green {
+    border: 3px solid #d0c310;
+}
+
+.light-green {
+    border: 3px solid #aacc22;
+}
+
+.green {
+    border: 3px solid #69d025;
+}
+
+.turquoise {
+    border: 3px solid #12bdb9;
+}
+
+.blue {
+    border: 3px solid #4444dd;
+}
+
+.indigo {
+    border: 3px solid #3311bb;
+}
+
+.violet {
+        border: 3px solid #442299;
+        
+}
+
+
+.container:hover .crc1 {
+    animation: spin 3000ms infinite linear forwards;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.container:hover .crc {
+    transform: rotate(-15deg);
+}
+
+.container:hover .blackhole {
+    background-color: #000000;
+}
+
+.container:hover {
+    cursor: pointer;
+}
