@@ -1,11 +1,13 @@
 # CSS-tricks
-![](scalable.gif)
-
 ## CSS Concepts in Use
 * Relative and Absolute Positioning
 * Flex
-* ::before and ::after
+* `::before` & `::after`
 * em vs rem
+
+![](scalable.gif)
+
+
 
 
 

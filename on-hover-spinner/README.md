@@ -1,8 +1,9 @@
 # CSS-tricks
-![](onHoverSpinner.gif)
-
 ## CSS Concepts in Use
 * Relative and Absolute Positioning
 * Flex
-* ::before and ::after
+* `::before` & `::after`
 * em vs rem
+
+![](onHoverSpinner.gif)
+
